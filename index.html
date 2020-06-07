@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="inject.js"></script>
+
+    <style>
+      .bp-widget-side {
+        width: auto !important;
+        min-width: 460px !important;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">Fluid jumbo heading</h1>
+          <p class="lead">Jumbo helper text</p>
+          <hr class="my-2">
+          <p>More info</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+          </p>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      window.botpressWebChat.init({
+        host: 'http://localhost:3000',
+        botId: 'sbm-banking-test', //The ID for your bot
+        botName: 'Bot', // Name of your bot
+        botAvatarUrl: null, // Default avatar URL of the image (e.g., 'https://avatars3.githubusercontent.com/u/1315508?v=4&s=400' )
+        botConvoDescription: '',
+        backgroundColor: '#ffffff', // Color of the background
+        textColorOnBackground: '#666666', // Color of the text on the background
+        foregroundColor: '#0176ff', // Element background color (header, composer, button..)
+        textColorOnForeground: '#ffffff', // Element text color (header, composer, button..)
+        showConversationsButton: true, // Whether or not to show the conversations button
+        showUserName: false, // Whether or not to show the user's name
+        showUserAvatar: false, // Whether or not to show the user's avatar
+        enableTranscriptDownload: false, // Whether or not to show the transcript download button
+        enableArrowNavigation: false, //Whether or to to support arrow navigation (e.g scroll conversation, focus on buttons)
+        externalAuthToken: 'my jwt token', // Defines a token that is sent with each messages to Botpress
+        userId: null, // Allows you to override the default user id. Make sure it is not possible to guess it!
+        enableReset: true, // Whether or not reset button will be shown to the user
+        extraStylesheet: 'https://raw.githubusercontent.com/Abdalla-Mohamed/chatbot/master/bot_theme.css' // Define a custom style sheet to override Botpress styling
+      })
+      </script>
+  </body>
+</html>
